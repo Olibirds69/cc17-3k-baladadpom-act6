@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Initialize RecyclerView
+        // Start of RecycleView
         // This finds the RecyclerView in the layout (activity_main.xml) using its ID
         val recyclerView: RecyclerView = findViewById(R.id.recycler_view)
 
@@ -26,9 +26,9 @@ class MainActivity : AppCompatActivity() {
         // Create a list of TipItems that represents the data for the RecyclerView
         // TipItems are categorized into sections (headers) and actual tips, each with a day, title, description, and image.
         val tipItems = listOf(
-            // Section Header for Stock Market Tips
+            /*Section Header for Stock Market Tips*/
             TipItem.SectionHeader("Stock Market Tips"),
-            // Tips under Stock Market
+            // Stock Market
             TipItem.Tip(
                 day = "Day 1",
                 title = "Invest in Blue Chip Stocks",
@@ -66,9 +66,9 @@ class MainActivity : AppCompatActivity() {
                 imageResId = R.drawable.stock6
             ),
 
-            // Section Header for Crypto Insights
+            /*Section Header for Crypto Insights*/
             TipItem.SectionHeader("Crypto Insights"),
-            // Tips under Crypto Insights
+            // Crypto Insights
             TipItem.Tip(
                 day = "Day 7",
                 title = "Buy During Dips",
@@ -106,9 +106,9 @@ class MainActivity : AppCompatActivity() {
                 imageResId = R.drawable.crypto6
             ),
 
-            // Section Header for Forex Strategies
+            /*Section Header for Forex Strategies*/
             TipItem.SectionHeader("Forex Strategies"),
-            // Tips under Forex Strategies
+            // Forex Strategies
             TipItem.Tip(
                 day = "Day 13",
                 title = "Use Leverage Wisely",
@@ -146,9 +146,9 @@ class MainActivity : AppCompatActivity() {
                 imageResId = R.drawable.forex6
             ),
 
-            // Section Header for Business Ideas
+            /* Section Header for Business Ideas*/
             TipItem.SectionHeader("Business Ideas"),
-            // Tips under Business Ideas
+            // Business Ideas
             TipItem.Tip(
                 day = "Day 19",
                 title = "E-commerce Store",
@@ -184,6 +184,45 @@ class MainActivity : AppCompatActivity() {
                 title = "Freelance Consulting",
                 description = "Leverage your expertise to help businesses grow through freelance consulting.",
                 imageResId = R.drawable.business6
+            ),
+
+            /*Section Header fo rthe Rich Money Habits */
+            TipItem.SectionHeader("Rich Money Habits"),
+            // Rich Money Habits
+            TipItem.Tip(
+                "Day 25",
+                "Save Before Spending",
+                "Pay yourself first.",
+                R.drawable.rich1
+            ),
+            TipItem.Tip(
+                "Day 26",
+                "Live Below Your Means",
+                "Wealth is about how much you save, not how much you spend.",
+                R.drawable.rich2
+            ),
+            TipItem.Tip(
+                "Day 27",
+                "Invest Consistently",
+                "Make a habit of regular investing.",
+                R.drawable.rich3
+            ),
+            TipItem.Tip(
+                "Day 28",
+                "Educate Yourself on Finance",
+                "Continuous learning builds wealth.",
+                R.drawable.rich4
+            ), TipItem.Tip(
+                "Day 29",
+                "Avoid Debt",
+                "Avoid debt, unless it's good debt.",
+                R.drawable.rich5
+            ),
+            TipItem.Tip(
+                "Day 30",
+                "Track Your Net Worth",
+                "Track your progress to stay motivated.",
+                R.drawable.rich6
             )
         )
 

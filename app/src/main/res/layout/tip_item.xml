@@ -16,9 +16,11 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="200dp"
         android:gravity="center_horizontal"
+        android:background="@color/md_theme_outlineVariant"
         android:orientation="vertical"
         android:padding="16dp">
 
+        <!--This is for the Day Number-->
         <TextView
             android:id="@+id/day_number"
             android:layout_width="match_parent"
@@ -28,6 +30,7 @@
             android:textSize="32sp"
             android:textStyle="bold" />
 
+        <!--This is for the Title-->
         <TextView
             android:id="@+id/tip_title"
             android:layout_width="wrap_content"
@@ -39,17 +42,17 @@
             android:textSize="24sp"
             android:textStyle="bold" />
 
+        <!--For the Image-->
         <ImageView
             android:id="@+id/tip_image"
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:layout_gravity="center"
-            android:background="@color/md_theme_outlineVariant"
             android:padding="16dp"
             android:scaleType="centerCrop"
             android:src="@drawable/stock1" />
 
-
+        <!--For the Description-->
         <TextView
             android:id="@+id/tip_description"
             android:layout_width="match_parent"
